@@ -73,7 +73,8 @@ nav li a {
 }
 
 #sobre-a-loja img {
-    width: 480px;
+    width: 36vh;
+    height: 36vh;
     margin-right: 24px;
 }
 
