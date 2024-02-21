@@ -15,6 +15,20 @@ html {
     margin: 0 auto;
 }
 
+.sobre-style{
+    padding-top: 26px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.style-p{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 header, footer {
     background-color: #192a56;
     padding-top: 16px;
@@ -73,17 +87,12 @@ nav li a {
 }
 
 #sobre-a-loja img {
-    width: 36vh;
-    height: 36vh;
-    margin-right: 24px;
+    width: 100%;
+    height: 100%;
 }
 
 section {
     padding: 48px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
 }
 
 .lista-veiculos {
