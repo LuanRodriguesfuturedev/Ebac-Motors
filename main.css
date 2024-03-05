@@ -1,20 +1,24 @@
+/* Define estilos básicos para todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão para o documento */
 }
 
+/* Esconde a barra de rolagem horizontal */
 html {
     overflow-x: hidden;
 }
 
+/* Define estilos para os contêineres */
 .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 1024px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza o contêiner na página */
 }
 
+/* Estilos específicos para a seção 'Sobre' */
 .sobre-style{
     padding-top: 26px;
     max-width: 1024px;
@@ -22,164 +26,191 @@ html {
     margin: 0 auto;
 }
 
+/* Estilos específicos para parágrafos */
 .style-p{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-
+/* Estilos para o cabeçalho e rodapé */
 header, footer {
-    background-color: #192a56;
-    padding-top: 16px;
-    color: white;
+    background-color: #192a56; /* Cor de fundo */
+    padding-top: 16px; /* Espaçamento interno superior */
+    color: white; /* Cor do texto */
 }
 
+/* Estilos específicos para o cabeçalho */
 header{
-    position: sticky;
-    top: 0;
+    position: sticky; /* Define a posição fixa do cabeçalho */
+    top: 0; /* Coloca o cabeçalho no topo da página */
     left: 0;
-    z-index: 1;
+    z-index: 1; /* Define a ordem de empilhamento */
 }
 
+/* Estilos para os contêineres dentro do cabeçalho e rodapé */
 header>.container,
 footer>.container {
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 16px;
+    justify-content: space-between; /* Alinha os itens ao longo do eixo principal */
+    align-items: center; /* Alinha os itens ao longo do eixo secundário */
+    padding-bottom: 16px; /* Espaçamento interno inferior */
 }
 
+/* Estilos para a navegação */
 nav {
-    background-color: #575fcf;
-    padding: 8px 0;
-    display: none;
+    background-color: #575fcf; /* Cor de fundo */
+    padding: 8px 0; /* Espaçamento interno */
+    display: none; /* Esconde a navegação por padrão */
 }
 
+/* Estilos para os itens de navegação */
 nav li {
-    list-style: none;
-    display: inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
+    list-style: none; /* Remove os marcadores de lista */
+    display: inline; /* Exibe os itens de navegação em linha */
+    margin-right: 16px; /* Espaçamento à direita */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
 }
 
+/* Estilos para os links de navegação */
 nav li a {
-    color: white;
-    text-decoration: none;
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove a decoração de texto padrão */
 }
 
+/* Estilos para o ícone do menu hamburguer */
 .menu-hamburguer {
-    width: 32px;
-    cursor: pointer;
+    width: 32px; /* Largura do ícone */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
 }
 
+/* Estilos para as barras do menu hamburguer */
 .menu-hamburguer span {
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    margin-bottom: 4px;
+    height: 2px; /* Altura das barras */
+    width: 100%; /* Largura total */
+    background-color: white; /* Cor das barras */
+    display: block; /* Exibe as barras em bloco */
+    margin-bottom: 4px; /* Espaçamento entre as barras */
 }
 
+/* Estilos para os contêineres flexíveis */
 .container-flex {
-    display: flex;
+    display: flex; /* Exibe os itens em um layout flexível */
 }
 
+/* Estilos para imagens dentro da seção 'Sobre a loja' */
 #sobre-a-loja img {
-    width: 100%;
-    height: 100%;
-
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
 }
 
+/* Estilos para as seções */
 section {
-    padding: 48px 0;
+    padding: 48px 0; /* Espaçamento interno superior e inferior */
 }
 
+/* Estilos para a lista de veículos */
 .lista-veiculos {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Quebra de linha para os itens flexíveis */
 }
 
+/* Estilos para os itens da lista de veículos */
 .lista-veiculos li {
-    list-style: none;
-    max-width: 30%;
-    margin-bottom: 24px;
+    list-style: none; /* Remove os marcadores de lista */
+    max-width: 30%; /* Largura máxima dos itens */
+    margin-bottom: 24px; /* Espaçamento inferior */
 }
 
+/* Estilos para as imagens dentro dos itens da lista de veículos */
 .lista-veiculos li img {
-    max-width: 100%;
+    max-width: 100%; /* Largura máxima */
 }
 
+/* Estilos para os títulos dentro dos itens da lista de veículos */
 .lista-veiculos li h3 {
-    margin: 16px 0;
+    margin: 16px 0; /* Espaçamento interno superior e inferior */
 }
 
+/* Estilos para o item central */
 .item-central {
-    margin: 0 5%;
+    margin: 0 5%; /* Margem esquerda e direita */
 }
 
+/* Estilos para botões */
 button {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    border: none;
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
-    border-radius: 6px;
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total */
+    padding: 8px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    background-color: green; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    font-style: italic; /* Estilo da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    border-radius: 6px; /* Raio da borda */
 }
 
+/* Estilos para o preço */
 .price {
-    margin: 16px 0;
-    display: block;
+    margin: 16px 0; /* Espaçamento externo superior e inferior */
+    display: block; /* Exibe como bloco */
 }
 
+/* Estilos para o preço com desconto */
 .price del {
-    color: rgb(153, 148, 148);
-    font-size: 14px;
+    color: rgb(153, 148, 148); /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
 }
 
+/* Estilos para o título 'Contato' */
 #contato h2{
-    padding-bottom: 28px;
+    padding-bottom: 28px; /* Espaçamento interno inferior */
 }
 
+/* Estilos para os campos do formulário */
 .form-campo {
-    margin-bottom: 16px;
+    margin-bottom: 16px; /* Espaçamento inferior */
 }
 
+/* Estilos para os rótulos dos campos do formulário */
 .form-campo label {
-    font-weight: bold;
-    display: block;
+    font-weight: bold; /* Peso da fonte */
+    display: block; /* Exibe como bloco */
 }
 
+/* Estilos para os campos de entrada e área de texto do formulário */
 .form-campo input,
 .form-campo textarea {
-    width: 100%;
-    display: block;
-    padding: 8px;
+    width: 100%; /* Largura total */
+    display: block; /* Exibe como bloco */
+    padding: 8px; /* Espaçamento interno */
 }
 
+/* Estilos para a área de texto do formulário */
 .form-campo textarea {
-    resize: none;
-    height: 120px;
+    resize: none; /* Impede a redimensionamento da área de texto */
+    height: 120px; /* Altura da área de texto */
 }
 
+/* Estilos para o formulário */
 form {
-    max-width: 360px;
+    max-width: 360px; /* Largura máxima do formulário */
 }
 
+/* Estilos para os botões dentro do formulário */
 form button {
-    max-width: 180px;
+    max-width: 180px; /* Largura máxima do botão */
 }
 
+/* Estilos para os itens de lista no rodapé */
 footer li {
-    list-style: none;
-    margin-left: 16px;
+    list-style: none; /* Remove os marcadores de lista */
+    margin-left: 16px; /* Espaçamento à esquerda */
 }
 
+/* Estilos para as imagens dentro dos itens de lista no rodapé */
 footer li img {
-    height: 32px;
+    height: 32px; /* Altura da imagem */
 }
