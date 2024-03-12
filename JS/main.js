@@ -36,7 +36,10 @@ $(document).ready(function () {
             }
         },
         messages: { // Define mensagens de erro personalizadas para campos específicos
-            nome: 'Por favor, insira o seu nome' // Mensagem de erro para o campo nome
+            nome: 'Por favor, insira o seu nome', // Mensagem de erro para o campo nome
+            email: 'Este campo é obrigatório', // Mensagem de erro para o campo nome
+            telefone: 'Este campo é obrigatório', // Mensagem de erro para o campo nome
+            mensagem: 'Este campo é obrigatório' // Mensagem de erro para o campo nome
         },
         submitHandler: function(form){ // Manipulador de submissão do formulário
             // Exibe um alerta indicando que o formulário foi enviado com sucesso
@@ -55,5 +58,16 @@ $(document).ready(function () {
                 alert(`Existem ${camposIncorretos} campos incorretos`);
             }
         }
-    });
+    })
+
+    $('.lista-veiculos button').click(function(){
+        const destino = $('#contato')
+        const nomeVeiculo = $(this).parent().find('h3').text()
+
+        $('#veiculo-interesse').val(nomeVeiculo)
+
+        $('html').animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
 });
